@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect('mongodb://localhost:27017/todov2', {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
+mongoose.connect('mongodb+srv://admin-vatsal:admin@cluster0.jurk8.mongodb.net/todov2', {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
 
 const itemsSchema = {
   name:{
